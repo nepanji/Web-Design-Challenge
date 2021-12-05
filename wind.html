@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Web Visualization Dashboard</title>
+
+  <!-- Bring in the updated bootstrap stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Nav Bar Set-up -->
+<div class = "navigation_bar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #18B1B4">
+      <div class="container-fluid">
+      <a class="navbar-brand" style="background-color: #18B1B4" href="index.html">Latitude</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#mynavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Dropdown Set-up -->
+      <div class="navbar navbar-expand-lg navbar-light bg-light" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+              <div class="dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Plots
+                  </a>
+                
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="temp.html">Temperature</a></li>
+                    <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+                    <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+                    <li><a class="dropdown-item" href="wind.html">Wind Speed</a></li>
+                  </ul>
+                </div>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="data.html">Data</a>
+        </ul>
+      </div>
+    </nav>
+    </div>
+
+    <!-- Temp Page Set-Up -->
+    <main class="container">
+
+        <section id="LatvsWind">
+            <h2>Wind Speed</h2>
+          <section id="figure">
+            <img src="assets/images/LatvsWind.png" alt="Latitude vs. Wind Speed">
+          </section>
+          <p>The plot indicates that there is no direct correlation to latitude and wind speed.</p>
+        </section>
+    
+        <aside id="visualizations-ind">
+          <h2>Visualizations</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6" > <a href="temp.html"><img src="assets/images/LatvsTemp.png" alt="Latitude vs Temperature"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6" > <a href="humidity.html"><img src="assets/images/LatvsHum.png" alt="Latitude vs Humidity"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6" > <a href="cloudiness.html"><img src="assets/images/LatvsCloud.png" alt="Latitude vs Cloudiness"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6" > <a href="wind.html"><img src="assets/images/LatvsWind.png" alt="Latitude vs Wind Speed"></a>
+                    </div>
+                </div>
+            </div>
+            
+        </aside>
+      </main>
+    
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
