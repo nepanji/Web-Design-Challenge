@@ -20,6 +20,4 @@ The website contains 7 pages total, including:
   * A "Data" page that:
     * Displays a responsive table containing the data used in the visualizations.
       
-## Access to the website
-Click the following link to access the website.
 
