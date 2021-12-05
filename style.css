@@ -1,0 +1,124 @@
+/*
+CSS Stylesheet (Latitude vs. X
+ */
+
+/* Styling for HTML elements */
+.navigation_bar{
+  color: white;
+}
+
+.navbar-brand{
+  color: white;
+  margin-left: 20px;
+  padding: 10px
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgb(51, 50, 50);
+  background: #f5f5f7;
+}
+
+header {
+  background: rgb(24, 177, 180);
+}
+
+h1 {
+  padding: 20px 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: rgb(24, 177, 180);
+  text-align: left;
+}
+
+h2 {
+  font-size: 26px;
+  color: rgb(24, 177, 180);
+  padding: 20px 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+  color: rgb(24, 177, 180);
+  padding: 20px 0;
+  margin: 0;
+}
+
+/* Selecting elements by class */
+.container {
+  width: 7000px;
+  margin-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-fluid{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.max_temp{
+  color:rgb(24, 177, 180);
+  text-align: center;
+}
+
+
+/* Selecting elements by ID */
+#main_intro,
+#visualizations,
+#Intro_image {
+  float: left;
+}
+
+#figure {
+  position: relative;
+}
+
+#main_intro {
+  padding: 20px;
+  margin: 5%;
+  margin-top: 10px;
+  position: relative;
+  width: 70%;
+  margin-block-start: 5%;
+  top: 30 px;
+  left:  10 px;
+  background-color: white;
+}
+
+#Intro_image {
+  width: 90%;
+  height: 140px;
+}
+
+#visual_box {
+  background-color: white;
+  margin-top: 30px;
+  padding: 15px;
+  width: 100%;
+}
+#visualizations {
+  color: rgb(24, 177, 180);
+  margin-top: 55px;
+  width: 35%;
+  padding: 20px;
+  background-color: white;
+  
+}
+#comparison {
+  background-color: white;
+  padding: 20px;
+  margin: 0%;
+}
+
+#visualizations-ind {
+  color: rgb(24, 177, 180);
+  width: 60%;
+  padding: 5px;
+}
